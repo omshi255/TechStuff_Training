@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS basic building blocks</title>
+    <style>
+     *
+     {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;                   /*-----------------universal selectors*/
+        border: 0;
+       outline: 0;
+     }
+
+     p , h1,div{
+      color: brown;                     /*----------------------type elements type */
+     }
+
+     #heading , .heading-1
+     {
+      color: chocolate;                 /*class selector*/
+     }
+     input[type="text"]
+     {
+      padding: 10px;                            /*attribute selector*/
+      border: none;
+     }
+     ul>li
+     {
+      color: blueviolet;
+     }
+
+    </style>
+</head>
+<body>
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facilis est magnam omnis esse quae natus deserunt laboriosam sit voluptate.</p>
+ <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ipsam!</h1>
+ <h3 id="heading" class="heading-1"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, suscipit?</h3>
+ <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, perspiciatis.</div>
+ <ul>
+   <li>home</li>
+   <li>school</li>
+   <li>college</li>
+ </ul>
+ <h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, placeat?</h3>
+ <p>
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facilis.</p>
+ 
+ <input type="text" placeholder="enter name">
+ <!--                           selectors:
+                            types of selectors
+
+1.Universal * (everything)
+
+2.Type (element) p, h1, div
+
+3.Class .className
+
+4.ID #idName
+
+5.Attribute [type="text"]
+
+Descendant/child/adjacent selectors (div p, ul > li, h1 + p etc.) -->
+
+<!-- 
+                                 Properties
+
+These are the “style rules” you apply to elements. -->
+
+<!--                               Values
+
+Every property needs a value.
+ -->
+
+
+<!-- Declarations
+
+A combination of property + value. -->
+
+
+
+<!-- 
+                                  Declaration Block
+
+Group of declarations inside { }. -->
+
+<!--                               Ruleset (Rule)
+
+Selector + Declaration Block together. -->
+
+<!--                                   Comments
+
+Notes for developers (ignored by browser). -->
+
+<!--                                   inheritance
+
+Some properties automatically pass from parent to child.
+
+body {
+  color: red;
+} -->
+<!--                                    Box Model
+
+Every element is like a box:
+
+Content (text/image)
+
+Padding (space inside border)
+
+Border (outline)
+
+Margin (space outside border) -->
+
+</body>
+</html>

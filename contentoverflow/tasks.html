@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow Example</title>
+
+    <style>
+        .box
+        {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 15px;
+            padding: 10px;
+
+        }
+        .visible
+        {
+            overflow: visible;
+        }
+        .hidden
+        {
+            overflow: hidden;
+        }
+        .scroll
+        {
+            overflow: scroll;
+        }
+        .auto
+        {
+            overflow: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Overflow Example</h2>
+    <div class="box visible">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum
+      consequuntur vero cum. Minus, recusandae aut et sunt quis illum.
+    </div>
+    <div class="box hidden">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum qui
+      necessitatibus ut natus pariatur consequatur a ab temporibus deserunt
+      iure.
+    </div>
+    <div class="box scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+      reprehenderit! Dolores labore illo laborum cum consequuntur ipsam
+      voluptatum quasi cumque.
+    </div>
+    <div class="box auto">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quas
+      illum minima doloremque exercitationem fugiat molestiae, quibusdam officia
+      accusamus placeat!
+    </div>
+  </body>
+</html>
+<!-- Visible → text flows outside the box.
+
+Hidden → text gets cut.
+
+Scroll → box always shows scrollbars.
+
+Auto → box shows scrollbars only when text doesn’t fit. -->
