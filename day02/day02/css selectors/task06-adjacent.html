@@ -1,0 +1,53 @@
+
+<!-- Instructions:
+
+Use an adjacent sibling selector (+) to style an element that comes immediately after another element.
+
+Example: h1 + p will style the <p> that comes right after an <h1>.
+
+Create an <h1> followed by multiple <p> tags.
+
+Only the first <p> immediately after <h1> should be styled.
+
+Add another <div> or <h2> with paragraphs after it → check that only the very next sibling gets the style.
+
+Use a clear style (e.g., text color, font weight, or background) to highlight the effect. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adjacent sibling selector (+) </title>
+    <style>
+   h1 + p
+   {
+    color: chartreuse;
+   }
+   h1{
+    color: cornflowerblue;
+   }
+
+   h2+p
+   {
+    color: crimson;
+   }
+  
+    </style>
+</head>
+<body>
+  <h1>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aspernatur rerum repudiandae incidunt laboriosam aut quasi temporibus praesentium perferendis maiores.
+  </h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, suscipit?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, neque.</p>
+ <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, doloribus.</p>
+ <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi maiores sequi molestias! Eius, ea corrupti!</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, neque.</p>
+ <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, doloribus.</p>
+</body>
+</html>
+
+
+
+
+
