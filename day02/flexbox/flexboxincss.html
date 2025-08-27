@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /*Aligns items along the main axis:*/
+        align-items: center; /*Aligns items along the cross axis (perpendicular to main axis):
+            */
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .item {
+        width: 400px;
+        height: 400px;
+        border: 1px solid white;
+        text-align: center;
+        flex: 1;
+         align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+   lor sit amet consectetur, adipisicing elit. Eos suscipit porro ad veniam provident necessitatibus dolore sunt esse obcaecati adipisci. sit amet, consectetur adipisicing elit. Nulla, eum?
+      </div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+    </div>
+  </body>
+</html>

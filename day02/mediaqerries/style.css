@@ -1,0 +1,33 @@
+@media (min-width : 601px) and (max-width : 1024px)  /*for  tablets*/
+{
+    h1
+    {
+        color: blueviolet;
+    }
+}
+
+/*for laptop*/
+
+@media (min-width : 1025px) and  (max-width: 1440px)
+{
+    h1
+    {
+        color: chartreuse;
+    }
+}
+
+@media (min-width : 1441px)  /*for desktop*/
+{
+    h1
+    {
+        color: coral;
+
+    }
+}
+@media (max-width : 600px)   /*for mobile*/
+{
+     h1
+     {
+        color: cornflowerblue;
+     }
+}
