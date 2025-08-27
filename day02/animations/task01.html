@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colour changin animation tasks</title>
+    <style>
+    
+   @keyframes colorchange
+   {
+    0%
+    {
+        background-color: blueviolet;
+    }
+    25%
+    {
+        background-color: aqua;
+    }
+    50%
+    {
+        background-color: brown;
+    }
+    75%
+    {
+        background-color: cadetblue;
+    }
+    100%
+    {
+        background-color: chartreuse;
+    }
+   }
+
+   .ball
+   {
+    width: 100px;
+    height: 100px;
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+   }
+
+
+    </style>
+</head>
+<body>
+   <div class="ball"></div> 
+</body>
+</html>
