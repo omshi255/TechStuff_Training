@@ -1,0 +1,64 @@
+
+/*1. Block-level elements
+
+Default: <div>, <p>, <section>, <h1>...<h6>, <ul>, <li>, <header>, <footer>
+
+Characteristics:
+
+Always start on a new line.
+
+Take full available width by default.
+
+Can set width, height, margin, padding.
+
+Syntax:
+
+
+2. Inline elements
+
+Default: <span>, <a>, <strong>, <em>, <img> (special case)
+
+Characteristics:
+
+Don’t start on a new line.
+
+Take only content’s width.
+
+width & height don’t apply directly.
+
+Only left/right margin & padding work properly. 
+Inline-block
+
+Characteristics:
+
+Behaves like inline (sits in line), but supports width/height like block.
+
+Useful for inline buttons, nav links, badges.
+None
+
+Hides the element completely (removed from layout flow). 
+Flex
+
+Converts element into a flex container.
+
+Children become flex items.
+
+Powerful for 1D layouts (row/column). . Table display values
+
+For table-like layouts:*/
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box
+{
+    width: 300px;
+    height: 300px;
+    border: 1px solid yellow;
+    
+
+}
