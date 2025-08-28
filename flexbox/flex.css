@@ -1,0 +1,66 @@
+/* display: flex ---enale flexbox 
+that container automatic becomes flex   container and that flex items become flex items  automatcally  */
+.container
+{
+    background-color: beige;
+    margin: 2px;
+    padding: 2px;
+     height: 1200px;
+    border: 5px solid wheat;
+    display: flex; /*flex ki direction by default row set hoti hai*/
+    flex-direction: row;
+    /* flex-wrap: wrap;   order reverse */
+      /*  flex-flow: row wrap;  items will move left to right if they dont fit*/
+    gap: 10px;
+    justify-content: start; /*main axis(horizontal) ke accordingly things ko place karta hai */
+    align-items: start;
+      /*cross axiske according things ko place karta hai */
+    align-content: start;
+    /* flex agar row hai to main axis horizontall hogi and agar flex direction column hai to main axis vertical hojaegi  */
+    
+}
+
+/* flex items properties  */
+
+/* flex - grow --humri flex item kis speed me grow karegi baki items ke comparision me   
+, flex shrink  -- humri flex item kis speed me shrink karegi baki items ke comparision me */
+/* flex basis used to set dimensions --width set krdia flex basis ke about */
+
+/*align-self */
+
+
+.box
+{
+    /* width: 200px;
+    height: 200px; */
+    border: 2px solid red;
+    margin: 2px;
+    padding: 2px;
+}
+#box1
+{
+   
+   background-color: aqua;
+   /* flex-shrink: 4; */
+   /* flex-grow: 1; */
+   align-self: center;  /*boxes ko vertical align karne ke lie use hota hai */
+   
+}
+#box2
+{    order: 500;  /*sequence changing ke lie use hota hai  */
+
+     background-color: blue;
+     /* flex-grow: 1; */
+}
+#box3
+{
+    background-color: orange;
+    /* flex-grow: 5; */
+}
+#box4
+{
+    background-color: chartreuse;
+/* 
+    flex-grow: 1; */
+    /* flex-basis: 400px; */
+}

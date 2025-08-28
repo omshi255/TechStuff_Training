@@ -1,0 +1,95 @@
+/* flex container properties */
+.container
+{
+    border: 2px solid red;
+     display: flex; /* enable flexbox */
+     display: inline-flex;/* ye container ke andar jo xhild inline elements hai une flex banata hai srf  jese span */
+    flex-direction: row;  /*main axis decide karta hai direcction kya hogi 
+    row - default left to right ,,, row -reverse - right to left ,,, column - top to bottom 
+    column-reverse - bottom to top */
+    flex-wrap: wrap;
+    /*flexwrap : nowrap--default single line 
+    , wrap: multiple lines next row me chala jata hai block 
+    wrap-reverse  : wrap karta hai reverse direction me*/
+    flex-flow: wrap; 
+    /*shortcut for flex direction + flex wrap */
+     justify-content: flex-start;
+
+     /*justify-content: flex-start;   /* default, start se 
+  justify-content: flex-end;     /* end me 
+  justify-content: center;       /* center 
+  justify-content: space-between;/* first-left, last-right, equal gaps in between 
+  justify-content: space-around; /* equal gaps around items 
+  justify-content: space-evenly; /* equal gaps everywhere 
+  */
+  align-items: center;
+
+  /*items ko cross axis pe align karta hai ye align items 
+  .container {
+  align-items: stretch;    /* default, full height/width 
+  align-items: flex-start; /* cross-axis start 
+  align-items: flex-end;   /* cross-axis end 
+  align-items: center;     /* cross-axis center 
+  align-items: baseline;   /* align text baseline 
+}
+
+  */
+
+align-content: center;
+ /*Multiple rows/columns ke beech spacing control karta hai (jab wrap ho).
+ align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;*/
+
+  gap: 20px;
+  /*items ke beeech gaps add karta hai types: gap, row-gap, column-gap*/
+
+
+}
+.box
+{
+    height: 200px;
+    width: 200px;
+    border: 2px solid yellow;
+    
+
+    
+}
+/*flex item properties */
+
+
+#box1
+{
+    background-color: blueviolet;
+    order: 4;    /* order : default order -0  items ko rearrange karta hai */
+       /* flex-grow: 2; Extra space distribute karega ya nahi.*/
+    flex-shrink: 1; /*Agar space kam ho to kitna shrink hoga. default oreder 0*/
+    /*Initial size before grow/shrink.------inshort width */
+    
+
+}
+#box2
+{
+    background-color: aqua;
+    flex: 1;  /* grow=1, shrink=1, basis=0 */
+    /*flex is the short hand for grow+shrink+basis*/
+
+}
+#box3
+{
+    flex-basis: 500px;
+    background-color: cadetblue;
+    align-self: center;   /*vertically align karta hai items ko */
+    /* align items jo h vo  container property hai and align self ik item 
+    property hai or ye srf ik item pe laagti hai and align-items poore 
+    container pe lagti hai  */
+
+}
+#box4
+{
+    background-color: chocolate;
+    order: 3;
+}
