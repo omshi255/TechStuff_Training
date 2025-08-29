@@ -1,0 +1,53 @@
+/* positionn property ye batati hai ki hum position property ko document me kaha position kar sakte hain */
+/*position  property have  types
+static  by default 
+- fixed 
+- absolute
+-sticky
+-relative
+*/
+img
+{
+    margin: 10px;
+}
+div
+{
+    border: 1px solid yellow;
+}
+.image1
+{
+
+}
+.image2
+{
+  /* position: relative;
+  top: 100px;
+  left: 100px; relative  ------- curent  window ke relatively object ko position kr rhe  h  
+  top , left , right , bottom 
+  
+  
+  gap maintained rehta  hai relative me 
+  jab hum relatve me position karte  h to current window ke accoridng place karte  hai */
+
+  
+}
+.image3
+{
+    position: sticky; /*position sticky me image intact  hai */
+
+    top: 100px;
+    /* position: absolute;
+    top: 100px; */
+/*absolute property ka use karte h jb hume webpage me overlapping karani hoti h toh 
+  ye nearest ancestors ke accrding work krti hai ye property 
+  closest position ancestors k relaive work krta hai  abosolute properrty  gaps maintain nahi karta hai
+  */
+}
+.container
+{
+    height: 8000px;
+}
+.image4
+{
+   /* position: fixed;  relative property  jo hai vo viewport ke relative work karti hai  */
+}
