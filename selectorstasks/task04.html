@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selectors</title>
+    <style>
+        a[href^="https"]
+        {
+            color: green;
+        }
+        a[href$=".pdf"]
+        {
+            color: red;
+        }
+        input[type="text"]
+        {
+            border: 2px solid blue;
+        }
+        input[type="checkbox"]
+        {
+            transform: scale(1.5);
+        }
+        img[alt*="icon"]
+        {
+            border: 2px solid  red;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://google.com">Google</a>
+  <a href="file.pdf">Download PDF</a>
+  <input type="text" placeholder="Text field">
+  <input type="checkbox">
+  <img src="icon.png" alt="app-icon">
+  <div data-role="admin">Admin Area</div>
+  <input type="text" required placeholder="Required field">
+</ul> 
+</body>
+</html>

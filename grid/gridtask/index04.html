@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF=8" />
+    <meta name="viewport" content="width-device , initial-scale=0.1" />
+    <title>grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 200px 1fr 100px;
+        grid-template-rows: 100px auto 60px;
+
+        grid-template-areas:
+          "header header header"
+          "sidebar main ads"
+          "footer footer footer";
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-auto-columns: 150px;
+        justify-content: center;
+        align-items: center;
+
+        justify-items: stretch;
+        align-items: stretch;
+        border: 2px solid black;
+      }
+      .header {
+        grid-area: header;
+        background: lightcoral;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background: lightblue;
+      }
+      .main {
+        grid-area: main;
+        background: lightgreen;
+      }
+      .ads {
+        grid-area: ads;
+        background: lightgoldenrodyellow;
+      }
+      .footer {
+        grid-area: footer;
+        background: var(--footer-color);
+      }
+
+      .main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: center;
+        justify-self: center;
+      }
+      :root {
+        --footer-color: coral;
+      }
+      .main .main-box {
+        width: 200px;
+        height: 100px;
+        background: url("https://jaro-website.s3.ap-south-1.amazonaws.com/2024/03/Features-of-Mern-stack-development-services-You-Should-Know-768x397-1.png")
+          no-repeat center/cover;
+        border: 10px solid black;
+        border-radius: 15px;
+        background-clip: padding-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="main"><div class="main-box"></div></div>
+      <div class="ads">Ads</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

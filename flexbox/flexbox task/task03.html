@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <title>flexbox</title>
+    <style>
+.container
+{
+   width: 800px;
+   height: 800px;
+   border: 2px solid red;
+   background:rgb(79, 80, 79);
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+
+}
+.box
+{
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    background-color: rgb(76, 94, 58);
+
+}
+#box1
+{
+   flex-grow: 2;
+}
+#box2
+{
+   flex-shrink: 1;
+}
+#box3
+{
+   flex-basis: 80px;
+}
+    </style>
+  </head>
+  <body>
+
+   <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+   </div>
+
+
+  </body>
+</html>

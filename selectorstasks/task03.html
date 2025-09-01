@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classses</title>
+    <style>
+  
+        button:hover
+        {
+            background: blue;
+        }
+        a:visited
+        {
+            color: purple;
+        }
+        input:focus
+        {
+            border: 2px solid  green;
+        }
+        button:active
+        {
+            background: red;
+        }
+        input[type="checkbox"]:checked + label
+        {
+              font-weight: bold;
+        }
+        button:disabled
+        {
+            color: gray;
+        }
+     
+    </style>
+</head>
+<body>
+     <ul class="structure">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li></li> <!-- empty li -->
+  </ul>
+  <ul class="only-child-test">
+    <li>Single Item</li>
+  </ul>
+   <!-- Section: Pseudo-classes State -->
+  <a href="https://example.com">Visited/Unvisited Link</a>
+  <br>
+  <input type="text" placeholder="Focus me">
+  <input type="checkbox" id="chk"><label for="chk">Check me</label>
+  <button>Click Me</button>
+  <button disabled>Disabled Button</button>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+    
+    div > p
+    {
+
+        color: red;
+    }
+ ul>li
+ {
+    text-decoration: underline;
+ }
+ ul > li:nth-child(4)
+ {
+    color: purple;
+ }
+li:first-child~li
+ {
+    font-weight: bold;
+ }
+ section > span
+ {
+    color: green;
+ }
+ h2+p{
+    font-style: italic;
+ }
+ h2 ~ p
+ {
+    background: yellow;
+ }
+  ul ul li
+  {
+  border: 1px solid black; 
+  }
+    </style>
+</head>
+<body>
+ <div class="combinators">
+    <h2>Heading</h2>
+    <p>Paragraph after h2</p>
+    <section>
+      <span>Span inside section</span>
+    </section>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Grapes</li>
+      <li>
+        Nested
+        <ul>
+          <li>Nested-1</li>
+          <li>Nested-2</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
