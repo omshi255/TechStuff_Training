@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+  max-width: 900px;
+  margin: 50px auto; /* center the grid */
+}
+
+.card {
+  background: #f3f4f6;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Middle card spans 2 columns */
+.featured {
+  grid-column: span 2;
+  background: #2563eb;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+  <div class="card">Basic Plan</div>
+  <div class="card featured">Pro Plan</div>
+  <div class="card">Enterprise Plan</div>
+</div>
+
+</body>
+</html>
