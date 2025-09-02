@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable scopes</title>
+</head>
+<body>
+
+
+
+  <script>
+  
+   //global scope -- can  declared anywhere
+
+    var a = 100;
+    console.log(a); // works  anywhere
+
+    //function  scope  -- variables inside the function
+  
+    function  test()
+    {
+        var b = "inside  function"
+        console.log(b);
+    }
+    test();
+    
+    //Block  Scoped -- variables inside { } using let or const  -- abliable only in that block
+    
+    
+    if(true)
+    {
+        let c  = "inside  block from let"
+        let  d = "inside  block from  const "
+        console.log(c ,"\n", d);
+    }
+
+  </script>  
+</body>
+</html>

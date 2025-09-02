@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+  <h1>javascript variables</h1>
+  <p>there are three type  of variables</p>
+   <ul>
+    <li>var(old used in ecma script6)
+    </li>
+    <li>let (morden preferred)</li>
+    <li> const (use when value never changes)</li>
+   </ul>
+    
+   <h4>var:</h4>
+   <p>var  are the functional scoped </p>
+   <p>var can be  redeclared</p>
+
+   <h4>let:</h4>
+   <p>let are the blocked scoped</p>
+   <p>cannot be redeclared  in the same scope but in another  </p>
+
+   <h4>const:</h4>
+   <p>const cannot be redeclared</p>
+   <p>blocked sope and have fixed value</p>
+
+   <p>there are three scopes of variable</p>
+   1.global scope -- accessible anywhere in program
+   2.function scope -- created with var accessible inside the function
+   3.block scope -- created with let and const accesible inside  the  blockk  {}
+
+   
+    <script>
+    
+    var  globalVar = "i am global";
+    console.log(globalVar);   // allowed  with  var .
+
+    var globalVar = "i am global 2"
+    console.log(globalVar);  //  cnan be  redelared
+    
+    let y = 300; //  allowwed wth let  
+    ///let y =300;  // not alllowed here
+     y = 400;  // allowed  with it  
+    console.log(y);
+
+    const z = 40;
+   // z = 34;  no allowed 
+   //can not  redeclared the connstant value 
+    console.log(z);
+   
+    </script>
+</body>
+</html>

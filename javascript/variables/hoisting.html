@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting part </title>
+</head>
+<body>
+    <h1>Hoisting</h1>
+    <br>
+    <p>JavaScript reads all variable & function declarations first (before running code).</p>
+
+    <script>
+        //how hoisting works with var  
+        //js automatically moves declaration to the top
+        console.log(a);
+        var  a = 10;
+        console.log(a);
+
+        //beside he scene js will look like:  
+        var a;
+        console.log(a);
+        a= 10;
+        console.log(a);
+
+        //how hoisitng works with the let and const.
+        
+        console.log(b);
+        let b = 20;
+
+        console.log(c);
+        const c = 30;
+
+        //  behind  he scene js sees i like this 
+
+        /* console.log(b);
+         let b =20;
+         console.log(c);
+         const c = 30;*/
+    </script>
+</body>
+</html>

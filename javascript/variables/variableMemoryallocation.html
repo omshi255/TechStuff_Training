@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory allocation</title>
+</head>
+<body>
+
+    <h1>JavaScript manages memory in two main areas:</h1>
+    <ul>
+        <li>Stack Memory</li>
+        <ul>
+            <li>Stores simple , 
+                fixed  size values like numbers , s
+                trings ,booleans  , null ,underfined , symbol , bigint.
+            </li>
+            <li>stored directly in memory</li>
+        </ul>
+        <li>Heap Memory</li>
+        <ul>
+            <li>Stores complex or dynamic data like objects, arrays, functions.</li>
+            <li>The variable stores only a reference (pointer) in stack, actual value is in heap.</li>
+        </ul>
+    </ul>
+  <script>
+          let num = 100; // stored directly in stack
+          let str = "hello"; // stored directly in stack
+
+          let arr = [1, 2, 3];
+          let obj = {name: "Swati"};
+          // arr and obj references are in stack, but data is stored in heap.
+  </script>  
+</body>
+</html>
