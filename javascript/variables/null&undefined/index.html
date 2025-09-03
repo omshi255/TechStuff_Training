@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null in javascript</title>
+</head>
+<body>
+    <h1>null in javascript : A special value that represents “nothing”, “empty”, or “no value</h1>
+    <p>Type: object (historical bug in JS)</p>
+    <p>It must be manually assigned.</p>
+ <script>
+    let a = null;
+    console.log(typeof(null));
+
+   let age;
+   console.log(age);  //undefined
+
+   function  test(){}
+   console.log(test()); //undefined
+
+   let  user = {};
+   console.log(user.name); //undefined
+
+
+   let data = null;    // I know it’s empty
+let value;           
+console.log(data);     // null
+console.log(value);    // undefined
+
+ </script>
+
+</body>
+</html>
