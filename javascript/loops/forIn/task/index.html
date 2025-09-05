@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   #info
+   {
+    width: 400px;
+    height: 400px;
+    word-spacing: 2px;
+    letter-spacing: 0.3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid white;
+    list-style: none;
+    padding: 10px;
+   }
+    </style>
+</head>
+<body>
+
+    <ul id="info">
+       
+    </ul>
+   <script>
+    let student = 
+    {
+       name:"swati sen",
+       age:21,
+       city:"Indore",
+       school:"Lisieux Anand School",
+       college:"swami vivekanand college of Enginnering",
+       rollnum:1233422,
+       id:34125832156
+    };
+
+    let details = function()
+    {
+     
+         const details  = document.getElementById("info");
+         details.innerHTML = "";
+
+       for(let key in  student)
+       {
+          let li = document.createElement("li");
+          li.textContent = `${key}:${student[key]}`;
+          details.appendChild(li);
+       }
+    }
+details();
+  </script> 
+</body>
+
+</html>
