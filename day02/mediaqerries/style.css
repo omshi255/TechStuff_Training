@@ -5,6 +5,14 @@
         color: blueviolet;
     }
 }
+@media screen  /*for small mobile*/
+{
+    h1
+    {
+        color: brown;
+    }
+    
+}
 
 /*for laptop*/
 

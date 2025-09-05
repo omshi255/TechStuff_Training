@@ -12,7 +12,26 @@ animation-fill-mode	Keeps style after animation ends -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animations</title>
-     <link rel="stylesheet" href="animation.css">
+     <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            animation-name: moveRight;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-play-state: running;
+        }
+
+        @keyframes moveRight {
+            0% { left: 0; background-color: red; }
+            100% { left: 400px; background-color: green; }
+        }
+     </style>
 </head>
 <body>
     <div class="ball"></div>
